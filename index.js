@@ -3,10 +3,8 @@ require("dotenv").config();
 const config = require("./config.json");
 const mongoose = require("mongoose");
 
-const connectionString = config.connectionString.replace(
-  "${MONGO_PASSWORD}",
-  process.env.MONGO_PASSWORD
-);
+const config = require('./config.json');
+const connectionString = config.connectionString.replace('{process.env.MONGO_PASSWORD}', process.env.MONGO_PASSWORD);
 
 mongoose.connect(connectionString);
 
