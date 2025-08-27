@@ -204,6 +204,6 @@ app.put("/update-note-pinned/:noteId", authenticateToken, async (req, res) => {
   
 
 
-app.listen(8000);
+app.listen(4000);
 
 module.exports = app;

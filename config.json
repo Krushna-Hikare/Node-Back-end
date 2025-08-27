@@ -1,3 +1,3 @@
 {
-  "connectionString": "mongodb+srv://krushna_db:p8pabXMunEht5wdY@note.odxnh4i.mongodb.net/?retryWrites=true&w=majority&appName=note"
+  "connectionString": "mongodb+srv://krushna_db:{process.env.MONGO_PASSWORD}@note.odxnh4i.mongodb.net/?retryWrites=true&w=majority&appName=note"
 }

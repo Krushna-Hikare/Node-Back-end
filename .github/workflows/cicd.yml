@@ -28,7 +28,7 @@ jobs:
         run: docker rm -f nodejs-app-container  
       - name: Run Docker Container
         run: |
-          docker run -d -p 4000:8000 \
+          docker run -d -p 4000:4000 \
             --name nodejs-app-container \
             -e MONGO_PASSWORD='${{ secrets.MONGODB }}' \
             -e ACCESS_TOKEN_SECRET='${{ secrets.JWT_SECRET }}' \
