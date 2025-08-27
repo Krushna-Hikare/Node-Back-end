@@ -31,5 +31,5 @@ jobs:
           docker run -d -p 4000:8000 \
             --name nodejs-app-container \
             -e MONGO_PASSWORD='${{ secrets.MONGODB }}' \
-            -e ACCESS_TOKEN_SECRET='${{ secrets.ACCESS_TOKEN_SECRET }}' \
+            -e ACCESS_TOKEN_SECRET='${{ secrets.JWT_SECRET }}' \
             krushna79/node_notescode:latest
